@@ -11,4 +11,4 @@ jobs:
     - name: Install SSH key
       uses: actions/checkout@v3
     - name: mi primer mensaje
-      run: echo "Hola mundo"
+      run: echo "Hola mundo" >> hola.txt
