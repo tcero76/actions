@@ -6,7 +6,7 @@ on:
 jobs:
   MiprimerJob:
     name: deploy a msg
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
     - name: Install SSH key
       uses: shimataro/ssh-key-action@v2
