@@ -1,5 +1,14 @@
-steps:
-- name: Install SSH key
-  uses: shimataro/ssh-key-action@v2
-- name: mi primer mensaje
-  run: echo "Hola mundo"
+name: First Workflow
+on:
+  push:
+    branches:
+      - master
+jobs:
+  MiprimerJob:
+    name: deploy a msg
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Install SSH key
+      uses: shimataro/ssh-key-action@v2
+    - name: mi primer mensaje
+      run: echo "Hola mundo"
