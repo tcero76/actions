@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Install SSH key
-      uses: shimataro/ssh-key-action@v2
+      uses: actions/checkout@v3
     - name: mi primer mensaje
       run: echo "Hola mundo"
