@@ -10,5 +10,7 @@ jobs:
     steps:
     - name: Install SSH key
       uses: actions/checkout@v3
-    - name: mi primer mensaje
+    - name: escribir mi primer mensaje
       run: echo "Hola mundo" >> hola.txt
+    - name: desplegar mi primer mensaje
+      run: cat hola.txt
